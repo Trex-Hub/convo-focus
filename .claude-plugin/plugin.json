@@ -1,8 +1,11 @@
 {
   "name": "convo-focus",
+  "displayName": "Convo Focus",
   "version": "0.1.0",
   "description": "Keeps the chat to you and the agent. Tool calls move to a side pane, grouped by prompt, with files changed and failures marked.",
   "author": { "name": "Devendra" },
+  "homepage": "https://github.com/Trex-Hub/convo-focus",
+  "repository": "https://github.com/Trex-Hub/convo-focus",
   "license": "MIT",
   "keywords": ["ui", "pane", "tool-calls", "mod"],
   "types": "./types/index.d.ts"

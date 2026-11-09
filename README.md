@@ -48,6 +48,14 @@ Ctrl+o shows the full transcript, tool rows included, whatever `/chatfocus` is s
 - State is kept for the session only: the last 25 prompts and 150 calls per prompt.
 - The mod only observes tool calls. It never changes, blocks or delays one.
 
+## What it runs, reads and sends
+
+Everything runs inside your Claude Code session. The mod makes no network requests, starts no processes, reads no files, and writes no files outside Claude Code's own session state.
+
+It watches three events and only reads from them: the prompt you send, each tool call with its result, and the end of each turn. From these it keeps, in the session's state, your prompt text, each call's tool name and a shortened copy of its input and output, and the agent's final answer, so the pane can show them. That state is gone when the session ends, and nothing is sent anywhere.
+
+It never changes, blocks or delays a tool call. If it fails to record a call, the call still runs. The only change to the chat is how the tool rows are drawn, which `/chatfocus` turns off.
+
 ## Develop
 
 `hooks/register.tsx` is the whole mod. Check it with `claude plugin validate .`.

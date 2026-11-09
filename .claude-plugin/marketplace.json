@@ -1,5 +1,6 @@
 {
   "name": "convo-focus",
+  "description": "Convo Focus: a Claude Code mod that keeps the chat to you and the agent and moves tool calls to a side pane.",
   "owner": { "name": "Devendra" },
   "plugins": [{ "name": "convo-focus", "source": "./" }]
 }
