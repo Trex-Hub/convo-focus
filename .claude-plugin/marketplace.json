@@ -1,0 +1,5 @@
+{
+  "name": "convo-focus",
+  "owner": { "name": "Devendra" },
+  "plugins": [{ "name": "convo-focus", "source": "./" }]
+}
